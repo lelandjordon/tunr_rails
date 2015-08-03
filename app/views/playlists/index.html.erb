@@ -1,4 +1,7 @@
-<h2>Playlists</h2>
+<h2>
+  Playlists
+  <%= link_to "(+)", new_playlist_path %>
+</h2>
 
 <ul>
   <% @playlists.each do |playlist| %>
