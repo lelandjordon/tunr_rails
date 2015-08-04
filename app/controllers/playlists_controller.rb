@@ -27,14 +27,12 @@ class PlaylistsController < ApplicationController
   end
 
   def add_song
-    @playlist = Playlist.find(params[:id])
-    @playlist.playlist_entries.create(song_id: params[:song_id])
+    # ADD CODE HERE TO ADD SONG TO PLAYLIST
     redirect_to @playlist
   end
 
   def remove_song
-    @playlist = Playlist.find(params[:id])
-    entries = @playlist.playlist_entries.where(song_id: params[:song_id]).destroy_all
+    # ADD CODE HERE TO REMOVE SONG FROM PLAYLIST
     redirect_to @playlist
   end
 

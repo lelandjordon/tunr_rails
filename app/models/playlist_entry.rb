@@ -1,4 +1,3 @@
 class PlaylistEntry < ActiveRecord::Base
-  belongs_to :song
-  belongs_to :playlist
+  # ADD CODE TO ASSOCIATE PLAYLISTS TO ENTRIES AND SONGS
 end
